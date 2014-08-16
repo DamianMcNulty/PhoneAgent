@@ -1,0 +1,77 @@
+<link rel="import" href="bower_components/polymer/polymer.html">
+<link rel="import" href="bower_components/core-icons/core-icons.html">
+<link rel="import" href="bower_components/core-icons/maps-icons.html">
+<link rel="import" href="bower_components/core-icons/hardware-icons.html">
+<link rel="import" href="bower_components/core-icons/device-icons.html">
+
+<polymer-element name="device-data" attributes="location network model os version">
+    <template>
+        <style>
+            :host {
+                display: block;
+                position: relative;
+                background-color: white;
+                padding: 20px;
+                width: 100%;
+                font-size: 1.4rem;
+                font-weight: 300;
+                border-bottom: 1px solid #ccc;
+                border-radius: 2px;
+            }
+            .holder {
+                margin: 0px;
+            }
+            table {
+                width: 100%;
+            }
+            table th {
+                padding: 2px;
+                text-align: left;
+                font-weight: bold;
+            }
+            table td {
+                padding: 10px;
+                text-align: center;
+            }
+            core-icon {
+                margin-right: 15px;
+            }
+            google-map {
+                display: block;
+                height: 400px;
+            }
+            .section-head {
+                border-top: 1px solid #ddd;
+            }
+        </style>
+        <!-- Content goes here -->
+        <div class="holder" layout horizontal center>
+            <core-icon icon="hardware:phone "></core-icon>
+            <h3>General</h3>
+        </div>
+        <div layout horizontal center class="section-head ">
+            <core-icon icon="info"></core-icon>
+            <h4>Device Information</h4> 
+        </div>
+
+        <content select="table"></content>
+
+        <div layout horizontal center class="section-head ">
+            <core-icon icon="device:network-cell "></core-icon>
+            <h4>Network Information</h4> 
+        </div>
+        <table class="data-table ">
+            <tr>
+                <th>Network Type</th>
+                <td align="right">
+                    <content></content>
+                </td>
+            </tr>
+        </table>
+
+    </template>
+    <script>
+        /*When the element is created, call all the functions that can retrieve and store the value in the sensor data model */
+        Polymer({});
+    </script>
+</polymer-element>

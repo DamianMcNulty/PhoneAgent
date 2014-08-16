@@ -1,0 +1,38 @@
+<link rel="import" href="bower_components/polymer/polymer.html">
+<link rel="import" href="device.html">
+<link rel="import" href="sensor.html">
+
+<polymer-element name="holder-data" attributes="show location network phone accelerometer battery" noscript>
+    <template>
+        <style>
+            :host {
+                display: block;
+                width: 100%;
+            }
+        </style>
+        <div>
+            <device-data location="{{location}}" hidden?="{{show != 'device'}}">
+                <table>
+                    <tr>
+                        <th>Model</th>
+                        <td>{{phone.model}}</td>
+                    </tr>
+                    <tr>
+                        <th>OS</th>
+                        <td>{{phone.platform}}</td>
+                    </tr>
+                    <tr>
+                        <th>Version</th>
+                        <td>{{phone.version}}</td>
+                    </tr>
+                </table>
+                {{network}}
+            </device-data>
+            <sensor-data accelerometer="{{accelerometer}}" battery="{{battery}}" hidden?="{{show != 'sensor'}}"></sensor-data>
+        </div>
+    </template>
+    <script>
+        Polymer({});
+    </script>
+</polymer-element>
+
