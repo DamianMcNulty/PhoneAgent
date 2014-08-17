@@ -1,6 +1,8 @@
 /Users/abbass/Projects/PhoneAgent/platforms/android/ant-gen/com/agent/phone/R.java \
  : /Users/abbass/Projects/PhoneAgent/platforms/android/res/drawable/icon.png \
+/Users/abbass/Projects/PhoneAgent/platforms/android/res/drawable/icon1.png \
 /Users/abbass/Projects/PhoneAgent/platforms/android/res/drawable-hdpi/icon.png \
+/Users/abbass/Projects/PhoneAgent/platforms/android/res/drawable-hdpi/icon1.png \
 /Users/abbass/Projects/PhoneAgent/platforms/android/res/drawable-land-hdpi/screen.png \
 /Users/abbass/Projects/PhoneAgent/platforms/android/res/drawable-land-ldpi/screen.png \
 /Users/abbass/Projects/PhoneAgent/platforms/android/res/drawable-land-mdpi/screen.png \
@@ -15,7 +17,9 @@
 /Users/abbass/Projects/PhoneAgent/platforms/android/res/values/strings.xml \
 /Users/abbass/Projects/PhoneAgent/platforms/android/res/xml/config.xml \
 /Users/abbass/Projects/PhoneAgent/platforms/android/ant-build/res/drawable/icon.png \
+/Users/abbass/Projects/PhoneAgent/platforms/android/ant-build/res/drawable/icon1.png \
 /Users/abbass/Projects/PhoneAgent/platforms/android/ant-build/res/drawable-hdpi/icon.png \
+/Users/abbass/Projects/PhoneAgent/platforms/android/ant-build/res/drawable-hdpi/icon1.png \
 /Users/abbass/Projects/PhoneAgent/platforms/android/ant-build/res/drawable-land-hdpi/screen.png \
 /Users/abbass/Projects/PhoneAgent/platforms/android/ant-build/res/drawable-land-ldpi/screen.png \
 /Users/abbass/Projects/PhoneAgent/platforms/android/ant-build/res/drawable-land-mdpi/screen.png \

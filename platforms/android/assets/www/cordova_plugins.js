@@ -42,16 +42,24 @@ module.exports = [
         "clobbers": [
             "navigator.battery"
         ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.Signal/www/signal.js",
+        "id": "org.apache.cordova.Signal.signal",
+        "clobbers": [
+            "signal"
+        ]
     }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
     "org.apache.cordova.device-motion": "0.2.10-dev",
-    "org.apache.cordova.geolocation": "0.3.10-dev",
     "org.apache.cordova.device": "0.2.12-dev",
     "org.apache.cordova.network-information": "0.2.12-dev",
-    "org.apache.cordova.battery-status": "0.2.10"
+    "org.apache.cordova.battery-status": "0.2.10",
+    "org.apache.cordova.geolocation": "0.3.9",
+    "org.apache.cordova.Signal": "0.0.1"
 }
 // BOTTOM OF METADATA
 });

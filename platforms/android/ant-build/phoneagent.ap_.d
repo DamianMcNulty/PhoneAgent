@@ -1,6 +1,8 @@
 /Users/abbass/Projects/PhoneAgent/platforms/android/ant-build/phoneagent.ap_ \
  : /Users/abbass/Projects/PhoneAgent/platforms/android/res/drawable/icon.png \
+/Users/abbass/Projects/PhoneAgent/platforms/android/res/drawable/icon1.png \
 /Users/abbass/Projects/PhoneAgent/platforms/android/res/drawable-hdpi/icon.png \
+/Users/abbass/Projects/PhoneAgent/platforms/android/res/drawable-hdpi/icon1.png \
 /Users/abbass/Projects/PhoneAgent/platforms/android/res/drawable-land-hdpi/screen.png \
 /Users/abbass/Projects/PhoneAgent/platforms/android/res/drawable-land-ldpi/screen.png \
 /Users/abbass/Projects/PhoneAgent/platforms/android/res/drawable-land-mdpi/screen.png \
@@ -15,7 +17,9 @@
 /Users/abbass/Projects/PhoneAgent/platforms/android/res/values/strings.xml \
 /Users/abbass/Projects/PhoneAgent/platforms/android/res/xml/config.xml \
 /Users/abbass/Projects/PhoneAgent/platforms/android/ant-build/res/drawable/icon.png \
+/Users/abbass/Projects/PhoneAgent/platforms/android/ant-build/res/drawable/icon1.png \
 /Users/abbass/Projects/PhoneAgent/platforms/android/ant-build/res/drawable-hdpi/icon.png \
+/Users/abbass/Projects/PhoneAgent/platforms/android/ant-build/res/drawable-hdpi/icon1.png \
 /Users/abbass/Projects/PhoneAgent/platforms/android/ant-build/res/drawable-land-hdpi/screen.png \
 /Users/abbass/Projects/PhoneAgent/platforms/android/ant-build/res/drawable-land-ldpi/screen.png \
 /Users/abbass/Projects/PhoneAgent/platforms/android/ant-build/res/drawable-land-mdpi/screen.png \
@@ -39,6 +43,7 @@
 /Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/img \
 /Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/index.html \
 /Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/js \
+/Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/network.html \
 /Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/plugins \
 /Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/sensor.html \
 /Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/bower_components/context-free-parser \
@@ -1211,12 +1216,12 @@
 /Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/bower_components/web-animations-js/tutorial/parallel/parallel.html \
 /Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/css/index.css \
 /Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/img/logo.png \
-/Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/js/index.js \
-/Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/js/sensor.js \
+/Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/js/app.js \
 /Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/plugins/org.apache.cordova.battery-status \
 /Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/plugins/org.apache.cordova.device \
 /Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/plugins/org.apache.cordova.device-motion \
 /Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/plugins/org.apache.cordova.network-information \
+/Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/plugins/org.apache.cordova.Signal \
 /Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/plugins/org.apache.cordova.battery-status/www \
 /Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/plugins/org.apache.cordova.battery-status/www/battery.js \
 /Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/plugins/org.apache.cordova.device/www \
@@ -1227,4 +1232,6 @@
 /Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/plugins/org.apache.cordova.network-information/www \
 /Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/plugins/org.apache.cordova.network-information/www/Connection.js \
 /Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/plugins/org.apache.cordova.network-information/www/network.js \
+/Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/plugins/org.apache.cordova.Signal/www \
+/Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/plugins/org.apache.cordova.Signal/www/signal.js \
 /Users/abbass/Projects/PhoneAgent/platforms/android/ant-build/AndroidManifest.xml \

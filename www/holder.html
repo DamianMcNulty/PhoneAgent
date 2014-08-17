@@ -1,38 +1,69 @@
 <link rel="import" href="bower_components/polymer/polymer.html">
 <link rel="import" href="device.html">
 <link rel="import" href="sensor.html">
+<link rel="import" href="network.html">
 
-<polymer-element name="holder-data" attributes="show location network phone accelerometer battery" noscript>
+<polymer-element name="holder-data" attributes="show location advanced neighbors network phone accelerometer battery">
     <template>
         <style>
             :host {
                 display: block;
                 width: 100%;
             }
+            table {
+                width: 85%;
+                margin-left: 30px;
+                padding: 5px;
+            }
+            table th {
+                padding: 1px;
+                text-align: left;
+                font-weight: bold;
+                width: auto;
+            }
+            table td {
+                padding: 2px;
+                text-align: left;
+                width: auto;
+            }
         </style>
         <div>
-            <device-data location="{{location}}" hidden?="{{show != 'device'}}">
-                <table>
-                    <tr>
-                        <th>Model</th>
-                        <td>{{phone.model}}</td>
-                    </tr>
-                    <tr>
-                        <th>OS</th>
-                        <td>{{phone.platform}}</td>
-                    </tr>
-                    <tr>
-                        <th>Version</th>
-                        <td>{{phone.version}}</td>
-                    </tr>
-                </table>
-                {{network}}
+            <device-data location="{{location}}" hidden?="{{show != 'phone'}}">
+                <label class="model">{{phone.model}}</label>
+                <label class="os">{{phone.platform}}</label>
+                <label class="version">{{phone.version}}</label>
+                <label class="imei">{{advanced.imei}}</label>
             </device-data>
             <sensor-data accelerometer="{{accelerometer}}" battery="{{battery}}" hidden?="{{show != 'sensor'}}"></sensor-data>
+            <network-data hidden?="{{show != 'network'}}">
+                <label class="operator">{{advanced.operator}}</label>
+                <label class="network">{{network}}</label>
+                <label class="cellID">{{advanced.cellID}}</label>
+                <label class="lac">{{advanced.lac}}</label>
+                <table class="cellinfo">
+                    <tr>
+                        <th>Cell ID</th>
+                        <th>LAC</th>
+                        <th>RSSI</th>
+                    </tr>
+                    <template repeat="{{neighbor in neighbors}}">
+                        <tr>
+                            <td>
+                                {{neighbor.cid}}
+                            </td>
+                            <td>
+                                {{neighbor.lac}}
+                            </td>
+                            <td>
+                                {{neighbor.rssi}}
+                            </td>
+                        </tr>
+                    </template>
+                </table>
+            </network-data>
         </div>
     </template>
     <script>
         Polymer({});
     </script>
 </polymer-element>
-

@@ -11,33 +11,40 @@
                 display: block;
                 position: relative;
                 background-color: white;
-                padding: 20px;
+                padding: 5px;
                 width: 100%;
                 font-size: 1.4rem;
                 font-weight: 300;
                 border-bottom: 1px solid #ccc;
-                border-radius: 2px;
             }
             .holder {
                 margin: 0px;
             }
             table {
-                width: 100%;
+                width: 85%;
+                margin-left: 30px;
+                padding: 5px;
             }
             table th {
-                padding: 2px;
-                text-align: left;
+                padding: 1px;
+                text-align: right;
                 font-weight: bold;
+                width: auto;
             }
             table td {
-                padding: 10px;
-                text-align: center;
+                padding: 2px;
+                text-align: left;
+                width: auto;
             }
             core-icon {
                 margin-right: 15px;
             }
-            .section-head {
-                border-top: 1px solid #ddd;
+            hr {
+                text-align: center;
+                margin: 0;
+                width: 100%;
+                color: #ddd;
+                border: 1px solid #ddd;
             }
         </style>
         <!-- Content goes here -->
@@ -45,7 +52,8 @@
             <core-icon icon="explore"></core-icon>
             <h3>Sensor Data</h3>
         </div>
-        <div layout horizontal center class="section-head">
+        <hr>
+        <div layout horizontal center>
             <core-icon icon="rotate-left"></core-icon>
             <h4>Accelerometer Data</h4> 
         </div>
@@ -59,6 +67,7 @@
                 <td>{{accelerometer.z | round}}</td>
             </tr>
         </table>
+        <hr>
         <div layout vertical>
             <div layout horizontal center class="section-head">
                 <core-icon icon="settings-power"></core-icon>
@@ -66,10 +75,8 @@
             </div>
             <table class="data-table">
                 <tr>
-                    <th width="60%">Battery Level</th>
-                    <td>{{battery.level}}</td>
-                </tr>
-                <tr>
+                    <th>Battery Level</th>
+                    <td>{{battery.level}} %</td>
                     <th>Charging Status</th>
                     <td>
                         <paper-toggle-button checked="{{battery.isPlugged}}"></paper-toggle-button>

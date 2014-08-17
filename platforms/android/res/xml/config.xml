@@ -17,13 +17,13 @@
     <feature name="Battery">
         <param name="android-package" value="org.apache.cordova.batterystatus.BatteryListener" />
     </feature>
-    <name>phoneagent</name>
+    <feature name="Signal">
+        <param name="android-package" value="org.apache.cordova.signal.Signal" />
+    </feature>
+    <name>WatchDOG</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
-    </author>
     <content src="index.html" />
     <access origin="*" />
 </widget>

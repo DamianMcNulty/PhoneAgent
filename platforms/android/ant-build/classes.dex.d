@@ -13,4 +13,5 @@
 /Users/abbass/Projects/PhoneAgent/platforms/android/ant-build/classes/org/apache/cordova/devicemotion/AccelListener.class \
 /Users/abbass/Projects/PhoneAgent/platforms/android/ant-build/classes/org/apache/cordova/networkinformation/NetworkManager$1.class \
 /Users/abbass/Projects/PhoneAgent/platforms/android/ant-build/classes/org/apache/cordova/networkinformation/NetworkManager.class \
+/Users/abbass/Projects/PhoneAgent/platforms/android/ant-build/classes/org/apache/cordova/signal/Signal.class \
 /Users/abbass/Projects/PhoneAgent/platforms/android/ant-build/dexedLibs/classes-14ded02ca00dedd4666571098638485c.jar \
