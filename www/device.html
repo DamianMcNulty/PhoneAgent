@@ -3,6 +3,7 @@
 <link rel="import" href="bower_components/core-icons/maps-icons.html">
 <link rel="import" href="bower_components/core-icons/hardware-icons.html">
 <link rel="import" href="bower_components/core-icons/device-icons.html">
+<link rel="import" href="bower_components/google-map/google-map.html">
 
 <polymer-element name="device-data" attributes="location advanced phone">
     <template>
@@ -43,6 +44,7 @@
                 display: block;
                 height: 300px;
                 margin: 0 auto;
+                width: 90%;
             }
             hr {
                 text-align: center;
@@ -84,6 +86,11 @@
                 </td>
             </tr>
         </table>
+        <div layout horizontal center class="section-head ">
+            <core-icon icon="maps:map"></core-icon>
+            <h4>Geolocation</h4> 
+        </div>
+        <content select="google-map"></content>
     </template>
     <script>
         /*When the element is created, call all the functions that can retrieve and store the value in the sensor data model */

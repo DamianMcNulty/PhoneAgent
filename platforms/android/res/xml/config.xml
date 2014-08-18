@@ -20,6 +20,9 @@
     <feature name="Signal">
         <param name="android-package" value="org.apache.cordova.signal.Signal" />
     </feature>
+    <feature name="Geolocation">
+        <param name="android-package" value="org.apache.cordova.geolocation.GeoBroker" />
+    </feature>
     <name>WatchDOG</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.

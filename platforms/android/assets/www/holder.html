@@ -28,11 +28,14 @@
             }
         </style>
         <div>
-            <device-data location="{{location}}" hidden?="{{show != 'phone'}}">
+            <device-data hidden?="{{show != 'phone'}}">
                 <label class="model">{{phone.model}}</label>
                 <label class="os">{{phone.platform}}</label>
                 <label class="version">{{phone.version}}</label>
                 <label class="imei">{{advanced.imei}}</label>
+                <google-map latitude="{{location.latitude}}" longitude="{{location.longitude}}" disableDefaultUI showCenterMarker apiKey="AIzaSyAKWxE4rqEEVxMF04Ls1D2Emr53zReY3WU">
+                    <google-map-marker latitude="{{location.latitude}}" longitude="{{location.longitude}}" draggable="false"></google-map-marker>
+                </google-map>
             </device-data>
             <sensor-data accelerometer="{{accelerometer}}" battery="{{battery}}" hidden?="{{show != 'sensor'}}"></sensor-data>
             <network-data hidden?="{{show != 'network'}}">

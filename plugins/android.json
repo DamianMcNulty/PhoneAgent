@@ -27,6 +27,10 @@
                         {
                             "xml": "<feature name=\"Signal\"><param name=\"android-package\" value=\"org.apache.cordova.signal.Signal\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Geolocation\"><param name=\"android-package\" value=\"org.apache.cordova.geolocation.GeoBroker\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -44,6 +48,10 @@
                         },
                         {
                             "xml": "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_LOCATION_EXTRA_COMMANDS\" />",
                             "count": 1
                         }
                     ]
@@ -64,10 +72,10 @@
         "org.apache.cordova.battery-status": {
             "PACKAGE_NAME": "com.agent.phone"
         },
-        "org.apache.cordova.geolocation": {
+        "org.apache.cordova.Signal": {
             "PACKAGE_NAME": "com.agent.phone"
         },
-        "org.apache.cordova.Signal": {
+        "org.apache.cordova.geolocation": {
             "PACKAGE_NAME": "com.agent.phone"
         }
     },

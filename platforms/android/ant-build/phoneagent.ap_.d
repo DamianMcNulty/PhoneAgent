@@ -45,6 +45,7 @@
 /Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/js \
 /Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/network.html \
 /Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/plugins \
+/Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/sample.html \
 /Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/sensor.html \
 /Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/bower_components/context-free-parser \
 /Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/bower_components/core-ajax \
@@ -1220,6 +1221,7 @@
 /Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/plugins/org.apache.cordova.battery-status \
 /Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/plugins/org.apache.cordova.device \
 /Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/plugins/org.apache.cordova.device-motion \
+/Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/plugins/org.apache.cordova.geolocation \
 /Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/plugins/org.apache.cordova.network-information \
 /Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/plugins/org.apache.cordova.Signal \
 /Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/plugins/org.apache.cordova.battery-status/www \
@@ -1229,6 +1231,11 @@
 /Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/plugins/org.apache.cordova.device-motion/www \
 /Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/plugins/org.apache.cordova.device-motion/www/Acceleration.js \
 /Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/plugins/org.apache.cordova.device-motion/www/accelerometer.js \
+/Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/plugins/org.apache.cordova.geolocation/www \
+/Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/plugins/org.apache.cordova.geolocation/www/Coordinates.js \
+/Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/plugins/org.apache.cordova.geolocation/www/geolocation.js \
+/Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/plugins/org.apache.cordova.geolocation/www/Position.js \
+/Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/plugins/org.apache.cordova.geolocation/www/PositionError.js \
 /Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/plugins/org.apache.cordova.network-information/www \
 /Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/plugins/org.apache.cordova.network-information/www/Connection.js \
 /Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/plugins/org.apache.cordova.network-information/www/network.js \

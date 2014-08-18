@@ -11,6 +11,11 @@
 /Users/abbass/Projects/PhoneAgent/platforms/android/ant-build/classes/org/apache/cordova/device/Device.class \
 /Users/abbass/Projects/PhoneAgent/platforms/android/ant-build/classes/org/apache/cordova/devicemotion/AccelListener$1.class \
 /Users/abbass/Projects/PhoneAgent/platforms/android/ant-build/classes/org/apache/cordova/devicemotion/AccelListener.class \
+/Users/abbass/Projects/PhoneAgent/platforms/android/ant-build/classes/org/apache/cordova/geolocation/CordovaLocationListener$LocationTimeoutTask.class \
+/Users/abbass/Projects/PhoneAgent/platforms/android/ant-build/classes/org/apache/cordova/geolocation/CordovaLocationListener.class \
+/Users/abbass/Projects/PhoneAgent/platforms/android/ant-build/classes/org/apache/cordova/geolocation/GeoBroker.class \
+/Users/abbass/Projects/PhoneAgent/platforms/android/ant-build/classes/org/apache/cordova/geolocation/GPSListener.class \
+/Users/abbass/Projects/PhoneAgent/platforms/android/ant-build/classes/org/apache/cordova/geolocation/NetworkListener.class \
 /Users/abbass/Projects/PhoneAgent/platforms/android/ant-build/classes/org/apache/cordova/networkinformation/NetworkManager$1.class \
 /Users/abbass/Projects/PhoneAgent/platforms/android/ant-build/classes/org/apache/cordova/networkinformation/NetworkManager.class \
 /Users/abbass/Projects/PhoneAgent/platforms/android/ant-build/classes/org/apache/cordova/signal/Signal.class \

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!--
   Licensed to the Apache Software Foundation (ASF) under one
   or more contributor license agreements.  See the NOTICE file
@@ -18,11 +18,7 @@
   under the License.
 -->
 
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-xmlns:rim="http://www.blackberry.com/ns/widgets"
-xmlns:android="http://schemas.android.com/apk/res/android"
-           id="org.apache.cordova.geolocation"
-      version="0.3.9">
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:rim="http://www.blackberry.com/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" id="org.apache.cordova.geolocation" version="0.3.9">
 
     <name>Geolocation</name>
     <description>Cordova Geolocation Plugin</description>
@@ -31,18 +27,19 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     <repo>https://git-wip-us.apache.org/repos/asf/cordova-plugin-geolocation.git</repo>
     <issue>https://issues.apache.org/jira/browse/CB/component/12320638</issue>
 
-    <!-- android -->
+    <!-- android 
     <platform name="android">
 
         <config-file target="AndroidManifest.xml" parent="/*">
             <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
             <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+            <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
         </config-file>
 
-    </platform>
+    </platform>-->
 
-     <!-- amazon-fireos -->
-    <platform name="amazon-fireos">
+    <!-- amazon-fireos -->
+    <platform name="android">
 
         <js-module src="www/Coordinates.js" name="Coordinates">
             <clobbers target="Coordinates" />
@@ -62,13 +59,14 @@ xmlns:android="http://schemas.android.com/apk/res/android"
 
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="Geolocation">
-	            <param name="android-package" value="org.apache.cordova.geolocation.GeoBroker"/>
-	        </feature>
+                <param name="android-package" value="org.apache.cordova.geolocation.GeoBroker" />
+            </feature>
         </config-file>
 
         <config-file target="AndroidManifest.xml" parent="/*">
             <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
             <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+            <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
         </config-file>
 
         <source-file src="src/amazon/GeoBroker.java" target-dir="src/org/apache/cordova/geolocation" />
@@ -77,7 +75,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         <source-file src="src/amazon/CordovaLocationListener.java" target-dir="src/org/apache/cordova/geolocation" />
 
     </platform>
-    
+
     <!-- ios -->
     <platform name="ios">
 
@@ -98,9 +96,9 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         </js-module>
 
         <config-file target="config.xml" parent="/*">
-	        <feature name="Geolocation">
-	            <param name="ios-package" value="CDVLocation"/>
-	        </feature>
+            <feature name="Geolocation">
+                <param name="ios-package" value="CDVLocation" />
+            </feature>
         </config-file>
         <header-file src="src/ios/CDVLocation.h" />
         <source-file src="src/ios/CDVLocation.m" />
@@ -131,11 +129,11 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         </js-module>
 
         <config-file target="www/config.xml" parent="/widget">
-            <feature name="Geolocation" value="Geolocation"/>
+            <feature name="Geolocation" value="Geolocation" />
         </config-file>
 
         <config-file target="www/config.xml" parent="/widget/rim:permissions">
-          <rim:permit>read_geolocation</rim:permit>
+            <rim:permit>read_geolocation</rim:permit>
         </config-file>
 
     </platform>
@@ -196,15 +194,15 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             <clobbers target="PositionError" />
         </js-module>
         <js-module src="src/windows8/GeolocationProxy.js" name="GeolocationProxy">
-          <merges target="" />
+            <merges target="" />
         </js-module>
     </platform>
 
     <!-- firefoxos -->
     <platform name="firefoxos">
-      <config-file target="config.xml" parent="/*">
-          <permission name="geolocation" description="Required for accessing user location." />
-      </config-file>
+        <config-file target="config.xml" parent="/*">
+            <permission name="geolocation" description="Required for accessing user location." />
+        </config-file>
 
         <js-module src="src/firefoxos/GeolocationProxy.js" name="GeolocationProxy">
             <runs />
