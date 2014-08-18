@@ -45,7 +45,6 @@
 /Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/js \
 /Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/network.html \
 /Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/plugins \
-/Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/sample.html \
 /Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/sensor.html \
 /Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/bower_components/context-free-parser \
 /Users/abbass/Projects/PhoneAgent/platforms/android/assets/www/bower_components/core-ajax \

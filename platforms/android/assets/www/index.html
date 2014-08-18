@@ -64,7 +64,8 @@
             </paper-tabs>
         </core-toolbar>
         <div class="container" layout vertical center>
-            <holder-data location network advanced phone accelerometer battery show="phone"></holder-data>
+            <holder-data location network advanced="{{advanced}}" phone="{{phone}}" accelerometer battery show="phone">
+            </holder-data>
         </div>
     </core-header-panel>
     <script type="text/javascript" src="cordova.js"></script>
