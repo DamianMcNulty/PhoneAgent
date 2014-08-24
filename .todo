@@ -1,2 +1,11 @@
 Add the methods for native calls made via JAVA
 Update repo in Github
+
+Data to be captured and sent to server:
+
+1. MSISDN Date time lat long altitude Device and OS version
+2. Sensor: Accelerometer data (m/s)
+3. MCC, MNC, LAC, CI
+4. Corel with BI Cell ID - From CDR
+
+Frequency: Every 10 minutes, Charging details

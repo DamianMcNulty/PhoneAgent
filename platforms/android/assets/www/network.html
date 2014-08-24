@@ -1,0 +1,97 @@
+<link rel="import" href="bower_components/polymer/polymer.html">
+<link rel="import" href="bower_components/core-icons/core-icons.html">
+<link rel="import" href="bower_components/core-icons/hardware-icons.html">
+<link rel="import" href="bower_components/core-icons/device-icons.html">
+
+<polymer-element name="network-data" attributes="advanced neighbors network">
+    <template>
+        <style>
+            :host {
+                display: block;
+                position: relative;
+                background-color: white;
+                padding: 5px;
+                width: 100%;
+                font-size: 1.4rem;
+                font-weight: 300;
+                border-bottom: 1px solid #ccc;
+            }
+            .holder {
+                margin: 0px;
+            }
+            table {
+                width: 85%;
+                margin-left: 30px;
+                padding: 5px;
+            }
+            table th {
+                padding: 1px;
+                text-align: left;
+                font-weight: bold;
+                width: auto;
+            }
+            table td {
+                padding: 2px;
+                text-align: left;
+                width: auto;
+            }
+            core-icon {
+                margin-right: 15px;
+            }
+            google-map {
+                display: block;
+                height: 300px;
+                margin: 0 auto;
+            }
+            hr {
+                text-align: center;
+                margin: 0px;
+                width: 100%;
+                color: #ddd;
+                border: 1px solid #ddd;
+            }
+        </style>
+        <!-- Content goes here -->
+        <div class="holder" layout horizontal center>
+            <core-icon icon="info"></core-icon>
+            <h3>Network Information</h3>
+        </div>
+        <hr>
+        <div layout horizontal center class="section-head ">
+            <core-icon icon="device:network-cell"></core-icon>
+            <h4>Operator Information</h4> 
+        </div>
+        <table>
+            <tr>
+                <th>Operator</th>
+                <td>
+                    <content select=".operator"></content>
+                </td>
+                <th>Network Type</th>
+                <td>
+                    <content select=".network"></content>
+                </td>
+            </tr>
+            <tr>
+                <th>Cell ID</th>
+                <td>
+                    <content select=".cellID"></content>
+                </td>
+                <th>LAC</th>
+                <td>
+                    <content select=".lac"></content>
+                </td>
+            </tr>
+        </table>
+        <hr>
+        <div layout horizontal center class="section-head ">
+            <core-icon icon="device:wifi-tethering"></core-icon>
+            <h4>Neighbouring Sites</h4> 
+        </div>
+        <content select=".cellinfo"></content>
+    </template>
+    <script>
+        /*When the element is created, call all the functions that can retrieve and store the value in the sensor data model */
+        Polymer({});
+    </script>
+</polymer-element>
