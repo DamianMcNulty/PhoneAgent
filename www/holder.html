@@ -33,7 +33,7 @@
                 <label class="os">{{phone.platform}}</label>
                 <label class="version">{{phone.version}}</label>
                 <label class="imei">{{advanced.imei}}</label>
-                <google-map latitude="{{location.latitude}}" longitude="{{location.longitude}}" disableDefaultUI showCenterMarker apiKey="AIzaSyAKWxE4rqEEVxMF04Ls1D2Emr53zReY3WU">
+                <google-map latitude="{{location.latitude}}" longitude="{{location.longitude}}" zoom="15" disableDefaultUI showCenterMarker apiKey="AIzaSyAKWxE4rqEEVxMF04Ls1D2Emr53zReY3WU">
                     <google-map-marker latitude="{{location.latitude}}" longitude="{{location.longitude}}" draggable="false"></google-map-marker>
                 </google-map>
             </device-data>
@@ -43,6 +43,8 @@
                 <label class="network">{{network}}</label>
                 <label class="cellID">{{advanced.cellID}}</label>
                 <label class="lac">{{advanced.lac}}</label>
+                <label class="imsi">{{advanced.imsi}}</label>
+                <label class="signal">{{advanced.currentSignal}}</label>
                 <table class="cellinfo">
                     <tr>
                         <th>Cell ID</th>

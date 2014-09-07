@@ -52,6 +52,10 @@ Signal.prototype.status = function(info) {
             signal.cellID = info.cellID;
             signal.lac = info.lac;
             signal.neighbors = info.neighbors;
+            signal.imsi = info.imsi;
+            signal.sentData = info.sentData;
+            signal.recdData = info.recdData;
+            signal.currentSignal = info.currentSignal;
         }
     }
 };

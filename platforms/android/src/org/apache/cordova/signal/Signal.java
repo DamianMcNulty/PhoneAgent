@@ -6,17 +6,24 @@ import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaInterface;
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CordovaWebView;
-import org.apache.cordova.LOG;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import android.annotation.SuppressLint;
+import android.annotation.TargetApi;
 import android.content.Context;
+import android.net.TrafficStats;
+import android.os.Build;
+import android.telephony.CellInfoGsm;
+import android.telephony.CellSignalStrengthGsm;
 import android.telephony.NeighboringCellInfo;
 import android.telephony.TelephonyManager;
 import android.telephony.gsm.GsmCellLocation;
 import android.util.Log;
 
+@TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR1)
+@SuppressLint("NewApi")
 public class Signal extends CordovaPlugin {
 
 	TelephonyManager Tel;
@@ -28,7 +35,7 @@ public class Signal extends CordovaPlugin {
 	public static int lac;
 
 	public Signal() {
-		
+
 	}
 
 	/**
@@ -73,7 +80,10 @@ public class Signal extends CordovaPlugin {
 			r.put("cellID", this.getCellID());
 			r.put("lac", this.getLac());
 			r.put("neighbors", this.getNeighbours());
-
+			r.put("currentSignal", this.getCurrentStrength());
+			r.put("imsi", this.Tel.getSubscriberId());
+			r.put("sentData", TrafficStats.getTotalTxBytes());
+			r.put("recdData", TrafficStats.getTotalRxBytes());
 			callbackContext.success(r);
 
 		} else {
@@ -122,12 +132,25 @@ public class Signal extends CordovaPlugin {
 				dbM = String.valueOf(-113 + 2 * rssi) + " dBm";
 			}
 
-			object.put("cid", cid);
-			object.put("lac", lac);
-			object.put("rssi", dbM);
+			if (NeighboringList.get(i).getCid() != -1
+					&& NeighboringList.get(i).getCid() != 65535
+					&& rssi != 99 && NeighboringList.get(i).getLac() != 0) {
+				object.put("cid", cid);
+				object.put("lac", lac);
+				object.put("rssi", dbM);
 
+			}
 			row.put(object);
 		}
 		return row;
+	}
+
+	@SuppressLint("NewApi")
+	public int getCurrentStrength() {
+		CellInfoGsm cellInfoGsm = (CellInfoGsm) this.Tel.getAllCellInfo()
+				.get(0);
+		CellSignalStrengthGsm cellSignalStrengthGsm = cellInfoGsm
+				.getCellSignalStrength();
+		return cellSignalStrengthGsm.getDbm();
 	}
 }
